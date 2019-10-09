@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/', require('./routes/index'));
-app.use('/mission', require('./routes/dopRouter'));
+app.use('/mission', require('./routes/mission'));
 app.use('/users', require('./routes/users'));
 app.use('/dop', require('./routes/dopRouter')); // .../dop url 접속 처리
 
